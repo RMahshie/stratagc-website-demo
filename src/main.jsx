@@ -75,23 +75,9 @@ function Hero() {
       <div className="hero-photo" aria-hidden="true"><img src="./reference.png" alt="" /></div>
       <div className="hero-shade" aria-hidden="true"></div>
       <div className="page-width hero-content">
-        <p className="hero-eyebrow">Fractional General Counsel for GovTech and Government Contractors</p>
         <h1 id="hero-title">Embedded legal leadership for companies scaling through complexity.</h1>
-        <p>Strategic counsel for privately owned GovTech and government-contracting companies navigating growth, risk, and major transitions.</p>
+        <p>Fractional General Counsel and strategic advisory for privately owned GovTech and government-contracting companies navigating growth, risk, and major transitions.</p>
         <a className="primary-button" href={`mailto:${email}`}><Mail size={18} /> Start a conversation</a>
-        <div className="trust-note"><ShieldCheck size={19} /> Contracts · Compliance · Transactions · Employment · Governance</div>
-      </div>
-    </section>
-  );
-}
-
-function ProofStrip() {
-  return (
-    <section className="proof-strip" aria-label="StrataGC experience">
-      <div className="page-width proof-grid">
-        <div className="proof-item"><strong>20 years</strong><span>Legal and business experience</span></div>
-        <div className="proof-item"><strong>17 years</strong><span>GovCon operator and executive</span></div>
-        <div className="proof-item"><strong>$8M → $80M</strong><span>GovCon technology business growth</span></div>
       </div>
     </section>
   );
@@ -103,7 +89,7 @@ function About() {
       <div className="page-width narrow center">
         <p className="eyebrow">About</p>
         <h2>Legal leadership that scales with your ambition.</h2>
-        <p>StrataGC gives you a single, trusted legal leader embedded in strategy, so you can operate like a<br className="desktop-break" /> high-growth company without building a law department.<br />Our founder spent 17 years as an operator and executive, scaling a GovCon tech business from $8M to $80M.<br />That experience shapes everything we do.</p>
+        <p>StrataGC gives you a single, trusted legal leader embedded in strategy, so you can operate like a<br className="desktop-break" /> high-growth company without building a law department.<br />Our founder brings 20 years of legal and business experience, including 17 years as a GovCon operator and executive<br className="desktop-break" /> who helped scale a technology business from $8M to $80M. That experience shapes everything we do.</p>
         <div className="small-rule"></div>
         <h3>Who We Serve</h3>
         <p>We work with privately owned Tech and GovCon companies in the $15M to $75M range.<br />Our clients are growth-minded organizations that value legal as a real built on business context.</p>
@@ -212,7 +198,7 @@ function Footer() {
 }
 
 function App() {
-  return <><Header /><main><Hero /><ProofStrip /><About /><Difference /><Process /><Services /><Insights /></main><Footer /></>;
+  return <><Header /><main><Hero /><About /><Difference /><Process /><Services /><Insights /></main><Footer /></>;
 }
 
 createRoot(document.getElementById('root')).render(<App />);
