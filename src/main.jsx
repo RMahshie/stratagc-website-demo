@@ -37,7 +37,8 @@ function Header() {
         <nav className={open ? 'main-nav is-open' : 'main-nav'} aria-label="Primary navigation">
           <a href="#about" onClick={close}>About</a>
           <a href="#services" onClick={close}>Services</a>
-          <a href="#insights" onClick={close}>Insights</a>
+          {/* Insights will return when the first articles are ready. */}
+          {/* <a href="#insights" onClick={close}>Insights</a> */}
           <a href="#approach" onClick={close}>Approach</a>
           <a href="#contact" onClick={close}>Contact</a>
           <a className="nav-email" href={`mailto:${email}`}><Mail size={15} /> Start a conversation</a>
@@ -198,7 +199,21 @@ function Footer() {
 }
 
 function App() {
-  return <><Header /><main><Hero /><About /><Difference /><Process /><Services /><Insights /></main><Footer /></>;
+  return (
+    <>
+      <Header />
+      <main>
+        <Hero />
+        <About />
+        <Difference />
+        <Process />
+        <Services />
+        {/* Insights will return when the first articles are ready. */}
+        {/* <Insights /> */}
+      </main>
+      <Footer />
+    </>
+  );
 }
 
 createRoot(document.getElementById('root')).render(<App />);
