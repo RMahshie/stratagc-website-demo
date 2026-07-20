@@ -40,7 +40,7 @@ function Header() {
           <a href="#insights" onClick={close}>Insights</a>
           <a href="#approach" onClick={close}>Approach</a>
           <a href="#contact" onClick={close}>Contact</a>
-          <a className="nav-email" href={`mailto:${email}`}><Mail size={15} /> {email}</a>
+          <a className="nav-email" href={`mailto:${email}`}><Mail size={15} /> Start a conversation</a>
         </nav>
         <button className="menu-button" onClick={() => setOpen(!open)} aria-expanded={open} aria-label="Toggle menu">
           {open ? <X /> : <Menu />}
@@ -75,10 +75,23 @@ function Hero() {
       <div className="hero-photo" aria-hidden="true"><img src="./reference.png" alt="" /></div>
       <div className="hero-shade" aria-hidden="true"></div>
       <div className="page-width hero-content">
-        <h1 id="hero-title">StrataGC</h1>
-        <p>Fractional General Counsel and strategic advisory<br className="desktop-break" /> for privately owned Tech and GovCon companies<br className="desktop-break" /> navigating growth, complexity, or their next<br className="desktop-break" /> major transition.</p>
-        <a className="primary-button" href={`mailto:${email}`}><Mail size={18} /> {email}</a>
-        <div className="trust-note"><ShieldCheck size={19} /> Embedded legal leadership. Practical strategy. Trusted.</div>
+        <p className="hero-eyebrow">Fractional General Counsel for GovTech and Government Contractors</p>
+        <h1 id="hero-title">Embedded legal leadership for companies scaling through complexity.</h1>
+        <p>Strategic counsel for privately owned GovTech and government-contracting companies navigating growth, risk, and major transitions.</p>
+        <a className="primary-button" href={`mailto:${email}`}><Mail size={18} /> Start a conversation</a>
+        <div className="trust-note"><ShieldCheck size={19} /> Contracts · Compliance · Transactions · Employment · Governance</div>
+      </div>
+    </section>
+  );
+}
+
+function ProofStrip() {
+  return (
+    <section className="proof-strip" aria-label="StrataGC experience">
+      <div className="page-width proof-grid">
+        <div className="proof-item"><strong>20 years</strong><span>Legal and business experience</span></div>
+        <div className="proof-item"><strong>17 years</strong><span>GovCon operator and executive</span></div>
+        <div className="proof-item"><strong>$8M → $80M</strong><span>GovCon technology business growth</span></div>
       </div>
     </section>
   );
@@ -199,7 +212,7 @@ function Footer() {
 }
 
 function App() {
-  return <><Header /><main><Hero /><About /><Difference /><Process /><Services /><Insights /></main><Footer /></>;
+  return <><Header /><main><Hero /><ProofStrip /><About /><Difference /><Process /><Services /><Insights /></main><Footer /></>;
 }
 
 createRoot(document.getElementById('root')).render(<App />);
