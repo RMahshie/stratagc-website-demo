@@ -51,7 +51,7 @@ function Header() {
 }
 
 const difference = [
-  { icon: UserRoundSearch, title: "The Operator’s Lens", text: "Delivered through 20+ years of experience in building, leading, and scaling companies in Tech and GovCon. We understand your world and the decisions that drive it." },
+  { icon: UserRoundSearch, title: "The Operator’s Lens", text: "Delivered through 20 years of experience in building, leading, and scaling companies in Tech and GovCon. We understand your world and the decisions that drive it." },
   { icon: ShieldCheck, title: 'Strategic Risk Management', text: "We identify risk and build proactive systems that reduce exposure, strengthen operations, and support sustainable growth." },
   { icon: Network, title: 'Curated Expert Network', text: "When you need specialized or niche expertise, our trusted network of external partners extends our bench with the right expertise at the right time. You’ll have the right viewpoint when it matters." },
 ];
@@ -90,10 +90,10 @@ function About() {
       <div className="page-width narrow center">
         <p className="eyebrow">About</p>
         <h2>Legal leadership that scales with your ambition.</h2>
-        <p>StrataGC gives you a single, trusted legal leader embedded in strategy, so you can operate like a<br className="desktop-break" /> high-growth company without building a law department.<br />Our founder spent 3+ years as an operator and executive, building a GovCon tech business from $4M to $364M.<br />That experience shapes everything we do.</p>
+        <p>StrataGC gives you a single, trusted legal leader embedded in strategy, so you can operate like a<br className="desktop-break" /> high-growth company without building a law department.<br />Our founder spent 17 years as an operator and executive, scaling a GovCon tech business from $8M to $80M.<br />That experience shapes everything we do.</p>
         <div className="small-rule"></div>
         <h3>Who We Serve</h3>
-        <p>We work with privately owned Tech and GovCon companies in the $15M to $250M range.<br />Our clients are growth-minded organizations that value legal as a real built on business context.</p>
+        <p>We work with privately owned Tech and GovCon companies in the $15M to $75M range.<br />Our clients are growth-minded organizations that value legal as a real built on business context.</p>
       </div>
     </section>
   );
