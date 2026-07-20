@@ -191,7 +191,7 @@ function Footer() {
       </div>
       <div className="footer-rule"></div>
       <div className="page-width legal">
-        <div className="footer-signoff"><Brand light /><span>© 2025 StrataGC, PLLC. All rights reserved.</span></div>
+        <div className="footer-signoff"><Brand light /><span>© 2025. All rights reserved.</span></div>
         <span className="legal-links"><a href="#top">Privacy Policy</a><i></i><a href="#top">Terms of Use</a></span>
       </div>
     </footer>
