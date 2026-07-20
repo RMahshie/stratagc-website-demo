@@ -3,7 +3,6 @@ import { createRoot } from 'react-dom/client';
 import {
   ArrowRight,
   BarChart3,
-  ChevronDown,
   FileCheck2,
   Mail,
   Menu,
@@ -184,14 +183,16 @@ function Footer() {
     <footer className="footer" id="contact">
       <div className="contact-band page-width">
         <div><h2>Let’s build clarity and confidence together.</h2><p>Whether you’re scaling, transitioning, or solving your<br className="desktop-break" /> next challenge, StrataGC is ready to step in.</p></div>
-        <div className="contact-box"><span><Mail /></span><div><h3>Contact Us</h3><a href={`mailto:${email}`}>{email}</a><a className="message-button" href={`mailto:${email}`}>Send a Message <ChevronDown size={13} /></a></div></div>
+        <div className="contact-simple">
+          <h3>Contact</h3>
+          <a href={`mailto:${email}`}><Mail size={15} /> {email}</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer"><b className="linkedin-icon">in</b> LinkedIn</a>
+        </div>
       </div>
       <div className="footer-rule"></div>
-      <div className="page-width footer-grid">
-        <div><Brand light /><p>Fractional General Counsel and<br />strategic advisory for growth-minded<br />Tech and GovCon companies.</p></div>
-        <div><h4>Quick Links</h4><a href="#about">About</a><a href="#services">Services</a><a href="#insights">Insights</a><a href="#approach">Approach</a><a href="#contact">Contact</a></div>
-        <div><h4>Services</h4><a href="#services">Growth & Transactions</a><a href="#services">Contracts & Compliance</a><a href="#services">Organizational Health</a></div>
-        <div><h4>Connect</h4><a href={`mailto:${email}`}><Mail size={14} /> {email}</a><a href="#contact"><b className="linkedin-icon">in</b> LinkedIn</a></div>
+      <div className="page-width footer-brand-row">
+        <Brand light />
+        <p>Fractional General Counsel and<br />strategic advisory for growth-minded<br />Tech and GovCon companies.</p>
       </div>
       <div className="page-width legal"><span>© 2025 StrataGC, PLLC. All rights reserved.</span><span><a href="#top">Privacy Policy</a><i></i><a href="#top">Terms of Use</a></span></div>
     </footer>
