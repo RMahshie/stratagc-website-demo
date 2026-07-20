@@ -53,8 +53,8 @@ function Header() {
 
 const difference = [
   { icon: UserRoundSearch, title: "The Operator’s Lens", text: "Delivered through 20+ years of experience in building, leading, and scaling companies in Tech and GovCon. We understand your world and the decisions that drive it." },
-  { icon: ShieldCheck, title: 'Strategic Risk Management', text: "We don’t just flag risk—we build proactive systems that reduce exposure, strengthen operations, and support sustainable growth." },
-  { icon: Network, title: 'Curated Expert Network', text: "When you need specialized or niche expertise, our trusted network of external partners extends our bench—right-sizing confidence. You’ll have the right viewpoint, the moment it matters." },
+  { icon: ShieldCheck, title: 'Strategic Risk Management', text: "We identify risk and build proactive systems that reduce exposure, strengthen operations, and support sustainable growth." },
+  { icon: Network, title: 'Curated Expert Network', text: "When you need specialized or niche expertise, our trusted network of external partners extends our bench with the right expertise at the right time. You’ll have the right viewpoint when it matters." },
 ];
 
 const steps = [
@@ -91,7 +91,7 @@ function About() {
       <div className="page-width narrow center">
         <p className="eyebrow">About</p>
         <h2>Legal leadership that scales with your ambition.</h2>
-        <p>StrataGC is a fractional GC as a single, trusted legal leader embedded in strategy—we let you work like a<br className="desktop-break" /> high-growth company without building a law department.<br />Our founder spent 3+ years as an operator and executive, building a GovCon tech business from $4M to $364M.<br />That experience shapes everything we do.</p>
+        <p>StrataGC gives you a single, trusted legal leader embedded in strategy, so you can operate like a<br className="desktop-break" /> high-growth company without building a law department.<br />Our founder spent 3+ years as an operator and executive, building a GovCon tech business from $4M to $364M.<br />That experience shapes everything we do.</p>
         <div className="small-rule"></div>
         <h3>Who We Serve</h3>
         <p>We work with privately owned Tech and GovCon companies in the $15M to $250M range.<br />Our clients are growth-minded organizations that value legal as a real built on business context.</p>
@@ -107,7 +107,7 @@ function Difference() {
         <div className="difference-intro">
           <p className="eyebrow">The Strata Difference</p>
           <h2>Embedded legal leadership.<br />Built for what’s next.</h2>
-          <p>We operate at the intersection of legal, business, and operations—bringing an operator’s perspective and a CGO mindset to every engagement.</p>
+          <p>We operate at the intersection of legal, business, and operations, bringing an operator’s perspective and a CGO mindset to every engagement.</p>
           <p>Our approach is practical, collaborative, and focused on results that move your business forward.</p>
         </div>
         <div className="difference-list">
@@ -183,7 +183,7 @@ function Footer() {
   return (
     <footer className="footer" id="contact">
       <div className="contact-band page-width">
-        <div><h2>Let’s build clarity and confidence—together.</h2><p>Whether you’re scaling, transitioning, or solving your<br className="desktop-break" /> next challenge, StrataGC is ready to step in.</p></div>
+        <div><h2>Let’s build clarity and confidence together.</h2><p>Whether you’re scaling, transitioning, or solving your<br className="desktop-break" /> next challenge, StrataGC is ready to step in.</p></div>
         <div className="contact-box"><span><Mail /></span><div><h3>Contact Us</h3><a href={`mailto:${email}`}>{email}</a><a className="message-button" href={`mailto:${email}`}>Send a Message <ChevronDown size={13} /></a></div></div>
       </div>
       <div className="footer-rule"></div>
