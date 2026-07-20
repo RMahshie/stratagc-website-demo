@@ -190,11 +190,10 @@ function Footer() {
         </div>
       </div>
       <div className="footer-rule"></div>
-      <div className="page-width footer-brand-row">
-        <Brand light />
-        <p>Fractional General Counsel and<br />strategic advisory for growth-minded<br />Tech and GovCon companies.</p>
+      <div className="page-width legal">
+        <div className="footer-signoff"><Brand light /><span>© 2025 StrataGC, PLLC. All rights reserved.</span></div>
+        <span className="legal-links"><a href="#top">Privacy Policy</a><i></i><a href="#top">Terms of Use</a></span>
       </div>
-      <div className="page-width legal"><span>© 2025 StrataGC, PLLC. All rights reserved.</span><span><a href="#top">Privacy Policy</a><i></i><a href="#top">Terms of Use</a></span></div>
     </footer>
   );
 }
