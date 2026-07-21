@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import {
   ArrowRight,
@@ -125,14 +125,18 @@ function Difference() {
 function Process() {
   return (
     <section className="process section" id="approach">
-      <div className="page-width">
-        <div className="center"><p className="eyebrow">How We Work</p><h2>A clear process. Aligned every step.</h2></div>
+      <div className="page-width process-layout">
+        <div className="process-intro">
+          <p className="eyebrow">How We Work</p>
+          <h2>A clear process.<br />Aligned every step.</h2>
+        </div>
         <div className="steps">
-          {steps.map(([number, title, text], index) => (
-            <React.Fragment key={number}>
-              <article className="step"><span>{number}</span><h3>{title}</h3><p>{text}</p></article>
-              {index < steps.length - 1 && <div className="step-arrow" aria-hidden="true"></div>}
-            </React.Fragment>
+          {steps.map(([number, title, text]) => (
+            <article className="step" key={number}>
+              <span>{number}</span>
+              <h3>{title}</h3>
+              <p>{text}</p>
+            </article>
           ))}
         </div>
       </div>
@@ -144,12 +148,18 @@ function Services() {
   return (
     <section className="services section" id="services">
       <div className="page-width">
-        <div className="center"><p className="eyebrow">Services</p><h2>Practical counsel. Business impact.</h2></div>
+        <div className="service-heading">
+          <p className="eyebrow">Services</p>
+          <h2>Practical counsel. Business impact.</h2>
+        </div>
         <div className="service-grid">
           {services.map(({ icon: Icon, title, items }) => (
             <article className="service-card" key={title}>
-              <div className="service-icon"><Icon /></div>
-              <div><h3>{title}</h3><ul>{items.map(item => <li key={item}>{item}</li>)}</ul></div>
+              <div className="service-card-top">
+                <div className="service-icon"><Icon aria-hidden="true" /></div>
+              </div>
+              <h3>{title}</h3>
+              <ul>{items.map(item => <li key={item}>{item}</li>)}</ul>
             </article>
           ))}
         </div>
